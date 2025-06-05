@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="fon">
+    <file>images/фон диплома.jpg</file>
+  </qresource>
+</RCC>

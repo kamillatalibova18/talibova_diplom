@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>clerk</class>
+ <widget class="QWidget" name="clerk">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Гор-Строй: Делопроизводство</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../гор.PNG</normaloff>../гор.PNG</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/fonnn/images/фон диплома.jpg);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>109</x>
+     <y>10</y>
+     <width>601</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI Light</family>
+     <pointsize>18</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QFrame {
+    background-color: rgba(149, 149, 149, 0.85);
+    border-radius: 15px;
+    border: 2px solid #3c3c3c;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;ООО &amp;quot;ГОР-СТРОЙ&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>60</y>
+     <width>250</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 1px solid #3c3c3c;
+}</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>230</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Light</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(6, 6, 6);</string>
+    </property>
+    <property name="text">
+     <string>Список проектов</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_search_project">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>230</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid #ccc;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Поиск проекта...</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_filter_project">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>230</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid #ccc;
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Все проекты</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Активные</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Архивные</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QListWidget" name="listWidget_project">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>230</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget {
+    background-color: white;
+    border: 1px solid #3c3c3c;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+QListWidget::item {
+    padding: 5px;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+QListWidget::item:hover {
+    background-color: #E6F3FA;
+}
+
+QListWidget::item:selected {
+    background-color: #008080;
+    color: white;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_open_project">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>230</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        background: #000086;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        font-size: 11px;
+        border: 1px solid #6ab0de;
+    }</string>
+    </property>
+    <property name="text">
+     <string>📂 Открыть проект</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_archive_project">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>450</y>
+      <width>230</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        background: #f0d8b0;
+        color: #5c4a32;
+        border-radius: 6px;
+        font-size: 11px;
+    }</string>
+    </property>
+    <property name="text">
+     <string>📦 Архивировать проект</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_refresh">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>505</y>
+      <width>230</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        background: #e0e0e0;
+        color: #333;
+        border-radius: 6px;
+        font-size: 11px;
+    }</string>
+    </property>
+    <property name="text">
+     <string>🔄 Обновить список</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>60</y>
+     <width>610</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 1px solid #3c3c3c;
+}</string>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>5</y>
+      <width>570</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Light</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #2a506d;</string>
+    </property>
+    <property name="text">
+     <string>ДОКУМЕНТАЦИЯ</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_search_document">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>570</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid #ccc;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Поиск документа...</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_document">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>570</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+    border-radius: 6px;
+    background-color: white;
+    border: 1px solid #3c3c3c;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_create_doc">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>280</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        background: #008000;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        font-size: 11px;
+    }</string>
+    </property>
+    <property name="text">
+     <string>📄 Создать новый документ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_export">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>370</y>
+      <width>280</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        background: #000086;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        font-size: 11px;
+        border: 1px solid #6ab0de;
+    }</string>
+    </property>
+    <property name="text">
+     <string>📤 Экспорт документов</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_preview">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>405</y>
+      <width>280</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        background: #5c9cc4;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        font-size: 11px;
+    }</string>
+    </property>
+    <property name="text">
+     <string>👁️ Предпросмотр документа</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_delete_doc">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>405</y>
+      <width>280</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+        background: #cc0000;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        font-size: 11px;
+    }</string>
+    </property>
+    <property name="text">
+     <string>🗑️ Удалить документ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_status_project">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>440</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #5c9cc4;
+    font-size: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Статус: не выбран</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_data_change_project">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>440</y>
+      <width>300</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #5c9cc4;
+    font-size: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Обновлено: --.--.----</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../images/Person_Holding_Up_A_Document-1024.webp</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>545</y>
+     <width>610</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 1px solid #3c3c3c;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>5</y>
+      <width>570</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Light</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #2a506d;</string>
+    </property>
+    <property name="text">
+     <string>ПРЕДПРОСМОТР ДОКУМЕНТА</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_preview">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>570</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextBrowser {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>images/Person_Holding_Up_A_Document-1024.webp</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../Downloads/delo.qrc"/>
+  <include location="../../../Downloads/fonn.qrc"/>
+  <include location="../../../Downloads/fo.qrc"/>
+  <include location="../../../Downloads/fondiplom.qrc"/>
+  <include location="fondippp.qrc"/>
+ </resources>
+ <connections/>
+</ui>

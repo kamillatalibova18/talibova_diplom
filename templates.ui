@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>templates</class>
+ <widget class="QWidget" name="templates">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>432</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Инженерный конструктор</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>гор.PNG</normaloff>гор.PNG</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/newPrefix/1669935661_41-kartinkin-net-p-fon-dlya-saita-svetlii-vkontakte-43.jpg);
+border: 1px solid #4682B4;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>10</y>
+     <width>451</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI Light</family>
+     <pointsize>18</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(6, 6, 6);
+    background-color: rgba(255, 255, 255, 150);
+    border-radius: 10px;
+    padding: 3px;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;✎ ИНЖЕНЕРНЫЙ ШАБЛОН&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>241</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+        QFrame {
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #adb5bd;
+            padding: 10px;
+        }
+    </string>
+   </property>
+   <widget class="QLineEdit" name="lineEdit_name_temp">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+        QLineEdit {
+            background: white;
+            border: 1px solid #87ceeb;
+            border-radius: 5px;
+            padding: 3px;
+        }
+     </string>
+    </property>
+    <property name="placeholderText">
+     <string>введите название</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_width_temp_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+        QLineEdit {
+            background: white;
+            border: 1px solid #87ceeb;
+            border-radius: 5px;
+            padding: 3px;
+        }
+     </string>
+    </property>
+    <property name="placeholderText">
+     <string>введите ширину(мм)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_heigth_temp_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+        QLineEdit {
+            background: white;
+            border: 1px solid #87ceeb;
+            border-radius: 5px;
+            padding: 3px;
+        }
+     </string>
+    </property>
+    <property name="placeholderText">
+     <string>введите высоту</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_depth_temp_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+        QLineEdit {
+            background: white;
+            border: 1px solid #87ceeb;
+            border-radius: 5px;
+            padding: 3px;
+        }
+     </string>
+    </property>
+    <property name="placeholderText">
+     <string>введите глубину(мм)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_fire">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+        QLineEdit {
+            background: white;
+            border: 1px solid #87ceeb;
+            border-radius: 5px;
+            padding: 3px;
+        }
+     </string>
+    </property>
+    <property name="placeholderText">
+     <string>введите класс пожарной безопасности</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="foundation_height">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+        QLineEdit {
+            background: white;
+            border: 1px solid #87ceeb;
+            border-radius: 5px;
+            padding: 3px;
+        }
+     </string>
+    </property>
+    <property name="placeholderText">
+     <string>введите высоту фундамента</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>80</y>
+     <width>261</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+         QFrame {
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #adb5bd;
+            padding: 10px;
+        }
+    </string>
+   </property>
+   <widget class="QComboBox" name="comboBox_material">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>231</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+        QComboBox {
+            background: white;
+            border: 1px solid #87ceeb;
+            border-radius: 5px;
+            padding: 3px;
+        }
+     </string>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_windy">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>введите ветровую нагрузку(кг/м^2)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_snow">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>введите снеговую нагрузку(кг/м^2)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_type_wall">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>введите тип стены</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_roof">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>введите тип крыши</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="wall_thickness">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>введите толщину стен</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="foundation_thickness">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>введите толщину фундамента</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_save_new_temp">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>360</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+        background: #000086;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        font-size: 11px;
+        border: 1px solid #6ab0de;
+    }
+
+QPushButton:hover {
+    background-color: #006666;
+}
+
+QPushButton:pressed {
+    background-color: #004d4d;
+}</string>
+   </property>
+   <property name="text">
+    <string>СОХРАНИТЬ ЧЕРТЁЖ</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/free-icon-save-2550221.png</normaloff>../../Downloads/free-icon-save-2550221.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

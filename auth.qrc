@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="mountains">
+    <file>images/IMG_3068.PNG</file>
+  </qresource>
+  <qresource prefix="newPrefix"/>
+</RCC>

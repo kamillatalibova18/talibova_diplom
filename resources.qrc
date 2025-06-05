@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/m">
+        <file>images/IMG_3068.PNG</file>
+        <file>images/free-icon-3d-model-17456294.PNG</file>
+        <file>images/login.png</file>
+        <file>images/pass.png</file>
+        <file>images/free-icon-log-in-3168040.png</file>
+    </qresource>
+</RCC>

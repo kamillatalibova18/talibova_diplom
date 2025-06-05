@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>engener</class>
+ <widget class="QWidget" name="engener">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Инженерный модуль - ООО &quot;ГОР-СТРОЙ&quot;</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>гор.PNG</normaloff>гор.PNG</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/fon/images/фон диплома.jpg);
+
+</string>
+  </property>
+  <widget class="QFrame" name="frame_header">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>780</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    background-color: rgba(149, 149, 149, 0.85);
+    border-radius: 15px;
+    border: 2px solid #3c3c3c;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_title">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>660</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Light</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(6, 6, 6);</string>
+    </property>
+    <property name="text">
+     <string>ООО &quot;ГОР-СТРОЙ&quot; - Инженерный модуль</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_icon">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/m/engineer_icon.png);
+background-repeat: no-repeat;
+background-position: center;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/free-icon-programmer-13518032.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_main">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>780</width>
+     <height>510</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    background-color: rgba(149, 149, 149, 0.85);
+    border-radius: 15px;
+    border: 2px solid #3c3c3c;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_sidebar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>200</width>
+      <height>490</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 1px solid #3c3c3c;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_templates">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>180</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic UI Light</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(6, 6, 6);</string>
+     </property>
+     <property name="text">
+      <string>Шаблоны зданий</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget_template">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>180</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget {
+    background-color: white;
+    border: 1px solid #3c3c3c;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+QListWidget::item {
+    padding: 5px;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+QListWidget::item:hover {
+    background-color: #E6F3FA;
+}
+
+QListWidget::item:selected {
+    background-color: #008080;
+    color: white;
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_template">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+        background: #000086;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        font-size: 11px;
+        border: 1px solid #6ab0de;
+    }
+
+QPushButton:hover {
+    background-color: #006666;
+}
+
+QPushButton:pressed {
+    background-color: #004d4d;
+}</string>
+     </property>
+     <property name="text">
+      <string>Создать/Посмотреть чертеж</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/free-icon-pen-13944019.png</normaloff>images/free-icon-pen-13944019.png</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Backspace</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_new_temp">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>385</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+        background: #000086;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        font-size: 11px;
+        border: 1px solid #6ab0de;
+    }
+
+QPushButton:hover {
+    background-color: #006666;
+}
+
+QPushButton:pressed {
+    background-color: #004d4d;
+}</string>
+     </property>
+     <property name="text">
+      <string>Создать новый шаблон</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/free-icon-blueprint-1624169.png</normaloff>images/free-icon-blueprint-1624169.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton__3d">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>420</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+        background: #000086;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        font-size: 11px;
+        border: 1px solid #6ab0de;
+    }
+
+QPushButton:hover {
+    background-color: #006666;
+}
+
+QPushButton:pressed {
+    background-color: #004d4d;
+}</string>
+     </property>
+     <property name="text">
+      <string>Просмотр 3D-модели</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/free-icon-3d-model-17456294.png</normaloff>images/free-icon-3d-model-17456294.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_close">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>455</y>
+       <width>180</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic UI Light</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-radius: 8px;
+    background-color: #8B0000;
+    color: white;
+    background-image: url(:/m/close_icon.png);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+QPushButton:hover {
+    background-color: #CD5C5C;
+}
+
+QPushButton:pressed {
+    background-color: #6B0000;
+}</string>
+     </property>
+     <property name="text">
+      <string>Завершить проект</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/free-icon-completed-form-14458832.png</normaloff>images/free-icon-completed-form-14458832.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_content">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>550</width>
+      <height>490</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 1px solid #3c3c3c;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_drawing_title">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>530</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic UI Light</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(6, 6, 6);</string>
+     </property>
+     <property name="text">
+      <string>2D-чертеж</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_drawing">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>530</width>
+       <height>440</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+    border: 1px solid #3c3c3c;
+    border-radius: 8px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="fondip.qrc"/>
+  <include location="../../Downloads/fonnn.qrc"/>
+  <include location="../../Downloads/fon.qrc"/>
+  <include location="fondip.qrc"/>
+ </resources>
+ <connections/>
+</ui>
